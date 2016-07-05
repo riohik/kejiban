@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+  <strong>Text:</strong>
+  <%= @user.text %>
+  <strong>Image</strong>
+  <%= image_tag attachment_url(@user,:image,:fill,100,100) %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
